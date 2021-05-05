@@ -1,4 +1,4 @@
-const Asena = require('../events');
+/*const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const { requestLyricsFor, requestAuthorFor, requestTitleFor, requestIconFor } = require("solenolyrics");
@@ -83,3 +83,4 @@ if (cn.WORKTYPE == 'private') {
         })
     });
 }
+*/
