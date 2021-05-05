@@ -2,7 +2,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 Sam Pandey
-
+*/
 
 const Asena = require('../events');
 const axios = require('axios');
@@ -65,4 +65,4 @@ else if (Config.WORKTYPE == 'public') {
 		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
 	}));
 }
-*/
+
