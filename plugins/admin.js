@@ -32,7 +32,7 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
         if (message.reply_message !== false) {
             await message.client.sendMessage(
                 message.jid, 
-                fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/Edited_20210227_152650.mp4"),
+                fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/M8kc.gif"),
                 MessageType.video, 
                 { mimetype: Mimetype.gif, caption: "Banned by Jarvis" }
             )
