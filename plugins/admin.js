@@ -34,7 +34,7 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/M8kc.gif"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "Banned by Jarvis" }
+                { mimetype: Mimetype.video, caption: "Banned by Jarvis" }
             )
             await message.client.sendMessage(message.jid,'```Haha Loser,Get lost from here``` ' +'@' + message.reply_message.data.participant.split("@")[0] + ' 😈', MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
             await message.client.groupRemove(message.jid, [message.reply_message.data.participant]);
