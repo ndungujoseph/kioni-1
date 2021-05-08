@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
 
 	Asena.addCommand({ pattern: 'henta', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/hentai?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis & Suraj' })
 	}));
 
 	Asena.addCommand({ pattern: 'panties', fromMe: true }, (async (message, match) => {
