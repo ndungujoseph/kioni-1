@@ -1,4 +1,4 @@
-const Asena = require('../events');
+/*const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const Axios = require('axios');
 const Config = require('../config');
@@ -33,3 +33,4 @@ Asena.addCommand({on: 'text', fromMe: false, onlyPm: true, deleteCommand: false,
         }
     }
 }));
+*/
