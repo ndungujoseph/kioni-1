@@ -2,20 +2,17 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 
-// Description
-const BOT_DESC = "Chat with an AI Bot.\n Use .bot <message>"
-const BOT = ":"
-const NOT_FOUNDAC = "*Invaild Request*"
-const NEED_LOCATIONA = "*Invaild Request*"
+const Language = require('../language');
+const Lang = Language.getString('weather');
 
-Asena.addCommand({pattern: 'ai ?(.*)', fromMe: false, desc: BOT_DESC}, async (message, match) => {
-	if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
+Asena.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
+	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
-	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n*🤖 ' + Jarvis +'* ```' + json.messages[0].response + '```\n\n' , MessageType.text,{quoted: message.data});
+	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n*🤖 ' + Lang.BOT +'* ```' + json.messages[0].response + '```\n\n' , MessageType.text,{quoted: message.data});
 	} catch {
-		return await message.client.sendMessage(message.jid, NOT_FOUNDAC, MessageType.text);
+		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
 });
