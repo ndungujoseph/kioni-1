@@ -1,4 +1,4 @@
-const config = require('../config');
+/*const config = require('../config');
 const MongoClient = require('mongodb').MongoClient;
 const fs = require('fs');
 
@@ -186,3 +186,4 @@ module.exports = {
     permitacton,
     nopermitacton
 }
+*/
