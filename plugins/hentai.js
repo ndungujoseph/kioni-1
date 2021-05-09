@@ -1,4 +1,4 @@
-/* Copyright (C) 2021.
+ Copyright (C) 2021.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 Sam Pandey
@@ -45,24 +45,24 @@ else if (Config.WORKTYPE == 'public') {
 		await message.sendMessage('🔞 *TODO HENTAI* 🔞\n\n➡️ !hentai\n➡️ !panties\n➡️ !masturb\n➡️ !pussy');
 	}));
 
-	Asena.addCommand({ pattern: 'hentai', fromMe: false }, (async (message, match) => {
+	Asena.addCommand({ pattern: 'hentai', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/hentai?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
 		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
 	}));
 
-	Asena.addCommand({ pattern: 'panties', fromMe: false }, (async (message, match) => {
+	Asena.addCommand({ pattern: 'panties', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/panties?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
 		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
 	}));
 
-	Asena.addCommand({ pattern: 'masturb', fromMe: false }, (async (message, match) => {
+	Asena.addCommand({ pattern: 'masturb', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/mstrb?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
 		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
 	}));
 
-	Asena.addCommand({ pattern: 'pussy', fromMe: false }, (async (message, match) => {
+	Asena.addCommand({ pattern: 'pussy', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/pussy?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
 		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
 	}));
 }
-*/
+
