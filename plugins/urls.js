@@ -1,4 +1,4 @@
-const Asena = require('../events');
+/*const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const { requestLyricsFor, requestAuthorFor, requestTitleFor, requestIconFor } = require("solenolyrics");
@@ -119,7 +119,7 @@ const del = "Şarkı sözlerini bulur."
     var buffer = await axios.get(cov, {responseType: 'arraybuffer'});
 
     await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: '*Aratılan Şarkı:* ' + '```' + `${match[1]}` + '```\n*Bulunan Şarkı:* ```' + tit + '```\n*Şarkı Sahibi:* ```' + son + '```\n*Şarkı Sözleri:*\n\n' + aut });
-*/
+
 }));
 const Sr = "Searchs on Google"
 Asena.addCommand({pattern: 'search ?(.*)', fromMe: true, desc: Sr}, (async (message, match) => {
@@ -166,3 +166,4 @@ if (cn.WORKTYPE == 'private') {
         })
     });
 }
+*/
