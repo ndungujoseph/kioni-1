@@ -15,7 +15,7 @@ const axios = require('axios');
           .get(`https://meme-api.herokuapp.com/gimme/porn`)
           .then(async (response) => {
             const {
-              url_gbr,
+              url,
             } = response.data.url
 
             const imageBuffer = await axios.get(url, {
@@ -23,7 +23,7 @@ const axios = require('axios');
             })
 
             await message.sendMessage(Buffer.from(imageBuffer.data), MessageType.image, {
-                        caption: "Made By Mr Sam"
+                        caption: "Made By Jarvis"
             })
           })
       },
