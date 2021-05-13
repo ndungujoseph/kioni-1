@@ -18,7 +18,7 @@ const axios = require('axios');
               url_gbr,
             } = response.data.url
 
-            const imageBuffer = await axios.get(url_gbr, {
+            const imageBuffer = await axios.get(url, {
               responseType: 'arraybuffer',
             })
 
