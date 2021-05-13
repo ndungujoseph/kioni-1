@@ -4,7 +4,7 @@ const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
 
-    Asena.addCommand({ pattern: 'test', fromMe: false }, async (message, match) => {
+    Asena.addCommand({ pattern: 'test', fromMe: true }, async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
