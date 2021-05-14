@@ -12,7 +12,7 @@ Asena.addCommand({pattern: 'ss ?(.*)', fromMe: false, desc: Lang.SS_DESC}, (asyn
 
     if (match[1] === '') return await message.sendMessage(Lang.LİNK);
 
-    var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://v1.nocodeapi.com/phaticusthiccy/screenshot?api_key=0llMsPHyvsD2EalC2GEKgfsqt10MFqMP&url=${match[1]}&output=image&full_page=true`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg,quoted:message.data})
 
