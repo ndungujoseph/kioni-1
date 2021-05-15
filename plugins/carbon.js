@@ -30,7 +30,7 @@ function base64_encode(file) {
 
 }
 
-var base64str = base64_encode('/root/WhatsAsenaDuplicated/media/68747470733a2f2f692e68697a6c69726573696d2e636f6d2f6d6d314e42732e6a7067_copy_160x160.jpeg');
+var base64str = base64_encode('/root/WhatsAsenaDuplicated/media/wp2664416-tony-stark-wallpaper-hd.jpg');
 
 if (Config.WORKTYPE == 'private') {
 
