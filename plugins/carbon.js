@@ -4,7 +4,7 @@ Telegram: t.me/phaticusthiccy
 
 Instagram: www.instagram.com/kyrie.baran
 
-*/
+
 
 const Asena = require('../events');
 
@@ -247,3 +247,4 @@ else if (Config.WORKTYPE == 'public') {
     }));
 
 }
+*/
