@@ -1,4 +1,4 @@
-/*const Asena = require('../events');
+const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const { requestLyricsFor, requestAuthorFor, requestTitleFor, requestIconFor } = require("solenolyrics");
@@ -18,7 +18,7 @@ const numms = "Sends the message you reply to the number you entered."
 const npmsa = ".numsend 91962..."
 const pmmm = "Sends a message to the person you respond to via the group."
 const usag = ".pmsend Hi"
-Asena.addCommand({pattern: 'pmsend?(.*)', fromMe: true, desc: pmmm, usage: usag}, (async (message, match) => {
+/*Asena.addCommand({pattern: 'pmsend?(.*)', fromMe: true, desc: pmmm, usage: usag}, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,'*Please Respond to Any User!*', MessageType.text);
     if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, '*Please Enter Message to Send!*', MessageType.text);
     const uspm = message.reply_message.jid
@@ -120,7 +120,7 @@ const del = "Şarkı sözlerini bulur."
 
     await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: '*Aratılan Şarkı:* ' + '```' + `${match[1]}` + '```\n*Bulunan Şarkı:* ```' + tit + '```\n*Şarkı Sahibi:* ```' + son + '```\n*Şarkı Sözleri:*\n\n' + aut });
 
-}));
+}));*/
 const Sr = "Searchs on Google"
 Asena.addCommand({pattern: 'search ?(.*)', fromMe: true, desc: Sr}, (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid,'```Aranacak Kelime Girmelisin!```', MessageType.text);
@@ -134,7 +134,7 @@ Asena.addCommand({pattern: 'search ?(.*)', fromMe: true, desc: Sr}, (async (mess
         await message.client.sendMessage(message.jid,binpayload,MessageType.text)
     });
 }));
-
+/*
 const cn = require('../config');
 const vf = "Confirmed Account"
 const novf = "Unconfirmed Account"
