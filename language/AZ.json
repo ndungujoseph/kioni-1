@@ -53,10 +53,10 @@
         "afk": {
             "AFK_DESC": "Sizi AFK edər.",
             "IM_AFK": "*Artıq AFK’yam!*",
-            "IM_AFK_NOMD": "Artıq AFK’yam!",
+            "IM_AFK_NOMD": "*Artıq AFK’yam!*",
             "REASON": "Səbəb",
             "LAST_SEEN": "Son görülmə",
-            "IM_NOT_AFK": "```Artıq AFK deyiləm!```",
+            "IM_NOT_AFK": "```*Artıq AFK deyiləm!*```",
             "AFK_TEXT": "```Bip bop! Bu Jarvis.Abdurehmanın botu.Sahibim hal hazırda burda deyil.```",
             "AFK_TEXT_NOMD": "Bip bop! Bu bir bot. Sahibim hal hazırda burda deyil.",
             "HOUR": "Saat",
