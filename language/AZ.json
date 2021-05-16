@@ -6,7 +6,7 @@
     "STRINGS": {
         "_asena": {
             "COMMAND": "Əmr",
-            "DESC": "Açığlama",
+            "DESC": "Açıqlama",
             "EXAMPLE": "Nümunə",
             "NOT_FOUND": "*Belə bir əmr tapa bilmədim*",
             "WARN": "Xəbərdarlıq"
