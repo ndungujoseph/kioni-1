@@ -18,17 +18,17 @@
             "INVALID_PLUGIN": "*❌ Plagininiz səhvdir!*\n*Xeta:*",
             "INSTALLED": "*✅ Plugin uğurla quraşdırıldı!*",
             "PLUGIN_DESC": "Qurduğunuz plaginləri göstərir.",
-            "INSTALLED_FROM_REMOTE": "*Xaricdən qurduğunuz plaginlər:*\n",
-            "NO_PLUGIN": "*Xarici plaginlər quraşdırmamışsınız!*",
+            "INSTALLED_FROM_REMOTE": "*Xaricdən qurduğunuz pluginlər:*\n",
+            "NO_PLUGIN": "*Xarici pluginlər quraşdırmamışsınız!*",
             "REMOVE_DESC": "Plugin çıxarır.",
-            "UNOFF": "⚠️ *Diqqət!* \n*Qurduğunuz plagin rəsmi deyil!*",
+            "UNOFF": "⚠️ *Diqqət!* \n*Qurduğunuz plugin rəsmi deyil!*",
             "NEED_PLUGIN": "```Zəhmət olmasa bir Plugin daxil edin! Nümunə: .plugin __test```",
-            "NOT_FOUND_PLUGIN": "```Bəlkə belə bir plagin quraşdırmısınız, ya da yox. Ancaq əmin deyil ki, indi deyil.```",
+            "NOT_FOUND_PLUGIN": "```Bəlkə belə bir plugin quraşdırmısınız, ya da yox. Ancaq əmin deyil ki, indi deyil.```",
             "DELETED": "*✅ Modul uğurla silindi!*",
-            "WARN": "Plaginləri yalnız t.me/remasterplugin kanalından əldə edin."
+            "WARN": "Pluginləri yalnız t.me/remasterplugin kanalından əldə edin."
         },
         "admin": {
-            "BAN_DESC": "Grupdan şəxsi banlayır. Cavap verin (reply) yada əmrin yanına şəxs adı yazın",
+            "BAN_DESC": "Grupdan şəxsi banlayır. Cavap verin (reply) yada əmrin yanına şəxsin adı yazın",
             "IM_NOT_ADMIN": "*Bu grupda admin deyiləm!*",
             "BANNED": "Grupdan çıxarıldı!",
             "GIVE_ME_USER": "*Mənə bir isdifadəçi ver!*",
