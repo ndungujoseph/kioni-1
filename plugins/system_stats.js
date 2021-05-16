@@ -52,12 +52,6 @@ Asena.addCommand({pattern: 'jarvis' , fromMe: true, desc: Lang.ALIVE_DESC}, (asy
 
 Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
     const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
-    const url = `https://api.quotable.io/random`;
-	try {
-		const response = await got(url);
-		const json = JSON.parse(response.body);
-		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📌 ' + Lang.QUOTE +'* ```' + json.content + '```\n\n' +
-		'*✒️' + Lang.AUTHOR +'* ```' + json.author+ '```\n', MessageType.text);
     await message.sendMessage(
         '```' + child + '```', MessageType.text
     );
