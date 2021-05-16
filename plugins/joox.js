@@ -1,4 +1,4 @@
-Asena.addCommand({ on: 'text', fromMe: true }, (async (message, match) => {
+/*Asena.addCommand({ on: 'text', fromMe: true }, (async (message, match) => {
 
     let regex1 = new RegExp('http://')
 
@@ -15,3 +15,4 @@ Asena.addCommand({ on: 'text', fromMe: true }, (async (message, match) => {
     }
 
 }));
+*/
