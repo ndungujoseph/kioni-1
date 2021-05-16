@@ -15,7 +15,7 @@ const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'sam ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'asena ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
@@ -76,7 +76,7 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Jarvis by Sam* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'●▬▬▬ *Jarvis by Abdurehman* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
             );
         }
     }));
@@ -112,7 +112,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Jarvis by Sam* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'●▬▬▬ *Jarvis by Abdurehman* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
             );    
         } else {
 
@@ -144,7 +144,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Jarvis by Sam* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'●▬▬▬ *Jarvis by Abdurehman* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
             );
         }
     }));
