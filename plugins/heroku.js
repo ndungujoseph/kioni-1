@@ -1,6 +1,3 @@
-Skip to content
-Sign up
-
 /* 
 Heroku plugin for WhatsAsena - W4RR10R
 Licensed under the  GPL-3.0 License;
