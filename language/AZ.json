@@ -75,7 +75,7 @@
         },
         "heroku": {
             "RESTART_DESC": "WhatsAsena-nı yenidən başladın",
-            "RESTART_MSG": "```yenidən başladır ...```",
+            "RESTART_MSG": "```yenidən başladılır ...```",
             "SHUTDOWN_DESC": "WhatsAsena-nı söndürün",
             "SHUTDOWN_MSG": "```Sağ ol Sahibim. Bəlkə Bir gün yenə görüşərik❤```",
             "DYNO_DESC": "Heroku dyno istifadəsini yoxlayın",
