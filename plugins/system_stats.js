@@ -17,7 +17,7 @@ Asena.addCommand({pattern: 'jarvis' , fromMe: true, desc: Lang.ALIVE_DESC}, (asy
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/wp2664416-tony-stark-wallpaper-hd.jpg"),
             MessageType.image, 
-            { mimetype: Mimetype.image, caption: "*●▬▬▬ Owner Edition ▬▬▬●*\n*Hii,I'm Jarvis.*\n```I do many cool tasks for my owner 24 hours and 7 days in week```\n*Jarvis works for Sam Pandey*\n```All things are working Perfectly```\n*web:* ```Sampandey.tk```\n*Grade:* ```Developer```\n*Branch:* ```Owner Edition```\n*Working on:* ```TheCyberbyte.tech```\n*My Favorite Work:*```Coding```\n\n*Powered by Mr Sam*" }
+            { mimetype: Mimetype.image, caption: "*●▬▬▬ Owner Edition ▬▬▬●*\n*Hii,I'm Jarvis.*\n```I do many cool tasks for my owner 24 hours and 7 days in week```\n*Jarvis works for Abdurehman*\n```All things are working Perfectly```\n*Grade:* ```Developer```\n*Branch:* ```Owner Edition```\n*My Favorite Work:*```Coding```\n\n*Powered by Avdurehman*" }
         )
     }
     else if (Config.ALIVEMSG == 'hosgeldin') {
