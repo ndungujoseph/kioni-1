@@ -8,7 +8,7 @@ const fs = require('fs');
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
-Asena.addCommand({pattern: 'alive' , fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'jarvis' , fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
     
     if (Config.ALIVEMSG == 'default') {
