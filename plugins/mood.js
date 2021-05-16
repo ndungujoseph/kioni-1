@@ -1,7 +1,7 @@
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 
-Asena.addCommand({pattern: 'mood ?(.*)', fromMe: false}, (async (message, match) => {
+Asena.addCommand({pattern: 'mood ?(.*)', fromMe: true}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *I am Searching This User’s Mood..* ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
