@@ -33,7 +33,7 @@
             "GIVE_ME_USER": "*Mənə bir isdifadəçi ver!*",
             "ADD_DESC": "Grupa adam əlavə edər.",
             "ADDED": "Grupa əlavə edildi!",
-            "ALREADY_PROMOTED": "Onsuzda admin olan birisini, necə admin edim ?",
+            "ALREADY_PROMOTED": "*Onsuzda admin olan birisini, necə admin edim ?*",
             "PROMOTED": "```, admin edildi!```",
             "PROMOTE_DESC": "Hər hansısa şəxsi admin edər.",
             "DEMOTE_DESC": "Hər hansısa bir adamdan adminlik hüququnu alar.",
