@@ -14,7 +14,7 @@ const axios = require('axios');
 
 const Config = require('../config');
 
-const dd = "*Made for Founder*"
+const dd = "*Made for Owner*"
 
 const fs = require('fs');
 
