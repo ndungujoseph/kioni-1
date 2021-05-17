@@ -10,14 +10,38 @@ const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
+const request = require('request')
+const fs = require('fs');
+const got = require('got');
+const { search, image } = require('googlethis');
 
 const Language = require('../language');
 const Lang = Language.getString('wallpaper');
 
+function base64_encode(file) {
+    var bitmap = fs.readFileSync(file);
+    return new Buffer(bitmap).toString('base64');
+}
+var base64str = base64_encode('/root/WhatsAsenaDuplicated/media/68747470733a2f2f692e68697a6c69726573696d2e636f6d2f6d6d314e42732e6a7067_copy_160x160.jpeg');
+
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'wallpaper', fromMe: true, desc: Lang.WP}, (async (message, match) => {
-
+    Asena.addCommand({pattern: 'wallpaper?(.*)', fromMe: true, desc: Lang.WP}, (async (message, match) => {
+        if (match[1] !== '') {
+            await image(`${match[1]}`).then(async(res) => {
+                var im = new Array ();
+                im[0] = res[0].url
+                im[1] = res[1].url
+                im[2] = res[2].url
+                im[3] = res[3].url
+                var i = Math.floor(4*Math.random())
+                const response = await fetch(`${im[i]}`);
+                const buffer = await response.buffer();
+                fs.writeFile(`/root/WhatsAsenaDuplicated/image.jpg`, buffer, (async () => {                 
+  	            return await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/image.jpg'), MessageType.image, {thumbnail: base64str, caption: 'Made by WhatsAsena' });
+                }))
+            })
+        }
         var r_text = new Array ();
 
         r_text[0] = "https://images.wallpaperscraft.com/image/trees_pines_lake_198439_4480x6720.jpg";
@@ -642,11 +666,8 @@ if (Config.WORKTYPE == 'private') {
         r_text[619] = "https://images.wallpaperscraft.com/image/face_surprise_emotions_141979_1350x2400.jpg";
         r_text[620] = "https://images.wallpaperscraft.com/image/smiley_emotions_minimalism_134124_1350x2400.jpg";
         var i = Math.floor(621*Math.random())
-
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made for Founder'})
-
+        await message.sendMessage(Buffer.from(respoimage.data, "base64"), MessageType.image, {mimetype: Mimetype.png, thumbnail: base64str, caption: 'Made for Founder'})
     }));
 }
 else if (Config.WORKTYPE == 'public') {
@@ -1280,7 +1301,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made for Founder'})
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made for Founder'})
 
     }));
 }
