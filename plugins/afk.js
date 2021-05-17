@@ -11,6 +11,12 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
+await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *I am Searching This User’s Mood..* ', MessageType.text, {
+        quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
+
+    });
+
+    
 const Language = require('../language');
 const Lang = Language.getString('afk');
 
