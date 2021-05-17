@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'private') {
             );
         
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Asena Dev-test* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'●▬▬▬ *Asena Owner Edition* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
             );    
         } else {
 
