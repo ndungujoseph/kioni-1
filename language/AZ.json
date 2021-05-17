@@ -185,7 +185,7 @@
             "UPLOADING_SONG": "```Mahnınız yüklənilir...```",
             "VIDEO_DESC": "YouTube'dan Video yükləyər.",
             "NEED_VIDEO": "*Xaiş bir Video adresi yazın!*\n*Nümunə:* ``.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
-            "DOWNLOADING_VIDEO": "```Videonuz yüklənilir...```",
+            "DOWNLOADING_VIDEO": "```Videonuz Endirilir...```",
             "UPLOADING_VIDEO": "```Videonuz yüklənilir...```",
             "YT_DESC": "YouTube'dan axtarış edər.",
             "NEED_WORDS": "```Xahiş edirəm bir neçə söz yazın!```",
