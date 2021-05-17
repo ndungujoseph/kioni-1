@@ -57,7 +57,7 @@
             "REASON": "Reason",
             "LAST_SEEN": "Last Seen",
             "IM_NOT_AFK": "```Jarvis is not AFK anymore!```",
-            "AFK_TEXT": "```Bip bop! This is Jarvis A personal Assistant of Mr Sam. My owner is not here at the moment.```",
+            "AFK_TEXT": "```Bip bop! This is Jarvis A personal assistant of Mr Sam. My Master Sam is not here at the moment.\nHe will see you when he comes back```",
             "AFK_TEXT_NOMD": "Bip bop! This is a bot.",
             "HOUR": "hour",
             "MINUTE": "minute",
