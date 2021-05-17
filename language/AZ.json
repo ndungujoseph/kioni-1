@@ -246,7 +246,7 @@
             "INVALID_HEROKU": "*❌ Heroku məlumatlarınız yanlışdır!*",
             "UPDATED": "*✅ Yenilənmə müvəffəqiyyətlə sona çatdı!*",
             "UPDATED_LOCAL": "*✅ Yenilənmə müvəffəqiyyətlə sona çatdı!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena Yenidən Başladır.*",
+            "AFTER_UPDATE": "*💬 WhatsAsena Yenidən Başladılır.*",
             "IN_AF": "*Zəhmət olmasa* ```HEROKU_APP_NAME``` *ilə* ```app_name``` *eyni olduğuna əmin olun.*\n*Bu iki dəyər eynidirsə, xahiş edirəm* ```HEROKU_API_KEY```'inizi *dəyişdirin!*\n\n_Bu parametrlərə daxil olmaq üçün Heroku >> Uygulama >> Settings >> Reavel Config Vars addımlarınızı izləyin._\n_API açarınızı yeniləmək üçün Heroku >> Account >> API Key Bölmədən təzələndikdən sonra onu köhnə API açarı ilə əvəz edin._"
         },
         "weather": {
