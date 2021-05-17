@@ -54,6 +54,8 @@
 
     "upscaler": "0.8.22",
 
+    "node-fetch": "^2.6.1",
+    
     "playstore-scraper": "^1.0.0",
 
     "googlethis": "^1.0.7",
