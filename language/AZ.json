@@ -181,7 +181,7 @@
             "SONG_DESC": "Yazdığınız musiqini yükləyər.",
             "NEED_TEXT_SONG": "*Xaiş bir mahnı yazın!*\n*Nümunə:* ```.song flört - rasta baba```",
             "NO_RESULT": "*Heçbir şey tapabilmədim :(*",
-            "DOWNLOADING_SONG": "```Mahnınız yüklənilir...```",
+            "DOWNLOADING_SONG": "```Mahnınız Endirilir...```",
             "UPLOADING_SONG": "```Mahnınız yüklənilir...```",
             "VIDEO_DESC": "YouTube'dan Video yükləyər.",
             "NEED_VIDEO": "*Xaiş bir Video adresi yazın!*\n*Nümunə:* ``.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
