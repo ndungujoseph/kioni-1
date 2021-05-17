@@ -13,21 +13,21 @@ const Language = require('../language');
 const Lang = Language.getString('instagram')
 const { errorMessage, infoMessage } = require('../helpers')
 
-const De = "Shorten long links."
-const numms = "Sends the message you reply to the number you entered."
-const npmsa = ".numsend 91962..."
-const pmmm = "Sends a message to the person you respond to via the group."
-const usag = ".pmsend Hi"
-/*Asena.addCommand({pattern: 'pmsend?(.*)', fromMe: true, desc: pmmm, usage: usag}, (async (message, match) => {
-    if (!message.reply_message) return await message.client.sendMessage(message.jid,'*Please Respond to Any User!*', MessageType.text);
-    if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, '*Please Enter Message to Send!*', MessageType.text);
+const De = "Uzun linkleri kısaltır."
+const numms = "Yanıtladığınız mesajı girdiğiniz numaraya gönderir."
+const npmsa = ".numsend 90551..."
+const pmmm = "Yanıt verdiğiniz kişiye grup üzerinden mesaj gönderir."
+const usag = ".pmsend Selam"
+Asena.addCommand({pattern: 'pmsend?(.*)', fromMe: true, desc: pmmm, usage: usag}, (async (message, match) => {
+    if (!message.reply_message) return await message.client.sendMessage(message.jid,'*Lütfen Herhangi Bi Kullancıya Yanıt Ver!*', MessageType.text);
+    if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, '*Lütfen Gönderilecek Mesajı Gir!*', MessageType.text);
     const uspm = message.reply_message.jid
     return await message.client.sendMessage(uspm, `${match[1]}`, MessageType.text);
 }));
 Asena.addCommand({pattern: 'numsend?(.*)', fromMe: true, desc: numms, usage: usag}, (async (message, match) => {
-    if (!message.reply_message) return await message.client.sendMessage(message.jid,'*Please Respond To Any Message!*', MessageType.text);
-    if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, '*Please Enter the Number to Send Message!*', MessageType.text);
-    if (message.reply_message && match[1].length > 16) return await message.client.sendMessage(message.jid, '*Please enter the number and reply to the message to be sent!*', MessageType.text);
+    if (!message.reply_message) return await message.client.sendMessage(message.jid,'*Lütfen Herhangi Bir Mesaja Yanıt Verin!*', MessageType.text);
+    if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, '*Lütfen Mesaj Gönderilecek Numarayı Gir!*', MessageType.text);
+    if (message.reply_message && match[1].length > 16) return await message.client.sendMessage(message.jid, '*Lütfen numarayı girip gönderileceğiniz mesajı yanıtlayın!*', MessageType.text);
     var exists = await message.client.isOnWhatsApp(match[1])
     const user = match[1] + '@s.whatsapp.net'
     if (exists) {
@@ -88,11 +88,11 @@ Asena.addCommand({pattern: 'short ?(.*)', fromMe: true, desc: De}, (async (messa
       if (err)
         await message.client.sendMessage(message.jid, '*#### Hata! ####*\n' + err, MessageType.text);
 
-        await message.client.sendMessage(message.jid, `*Original link:* ${match[1]}\n*ShortLink:* ` + res, MessageType.text)
+        await message.client.sendMessage(message.jid, `*Orjinal Link:* ${match[1]}\n*Kısa Link:* ` + res, MessageType.text)
     });
 }));
-const sjsj = "Shows application information from Playstore."
-const tzx = "*Enter any app name to search!*"
+const sjsj = "Playstore'den uygulama bilgisini gösterir."
+const tzx = "*Arama yapmak için herhangi bir uygulama adı gir!*"
 Asena.addCommand({pattern: 'playstore ?(.*)', fromMe: true, desc: sjsj}, (async (message, match) => {
     if (match[1] == '') return await message.sendMessage(tzx)
     await message.sendMessage(match[1] + ' ```İçin arama yapılıyor..```')
@@ -100,14 +100,14 @@ Asena.addCommand({pattern: 'playstore ?(.*)', fromMe: true, desc: sjsj}, (async 
         await playstore.getExtendedInfo(res.results[0].link).then(async(res) => {
             let vers = res.version.includes('with') ? 'Cihazlar arası farklılık gösterebilir.' : res.version
             let boy = res.additional_info.size.includes('with') ? 'Cihazlar arası farklılık gösterebilir.' : res.additional_info.size
-            return await message.client.sendMessage(message.jid,'*Game Name:* ' + res.title + '\n*Short Description:* ' + res.snippet + '\n*Version:* ' + vers + '\n*Category:* ' + res.genre + '\n*Price:* ' + res.price + '\n*Distraction:* ' + res.rating + '/5.0 ⭐\n*Number of Votes:* ' + res.ratings + '\n*Age limit:* ' + res.additional_info.content_rating + '\n*Developer:* ' + res.additional_info.developer + '\n*Number of Downloads:* ' + res.additional_info.installs + '\n*Last Update Date:* ' + res.additional_info.updated + '\n*Size:* ' + boy + '\n*Explanation:* ' + res.description + '\n\n*What's new:* ' + res.whatsnew, MessageType.text);
+            return await message.client.sendMessage(message.jid,'*Oyun İsmi:* ' + res.title + '\n*Kısa Açıklama:* ' + res.snippet + '\n*Sürüm:* ' + vers + '\n*Kategori:* ' + res.genre + '\n*Fiyat:* ' + res.price + '\n*Oyalama:* ' + res.rating + '/5.0 ⭐\n*Oylama Sayısı:* ' + res.ratings + '\n*Yaş Sınırı:* ' + res.additional_info.content_rating + '\n*Geliştirici:* ' + res.additional_info.developer + '\n*İndirme Sayısı:* ' + res.additional_info.installs + '\n*Son Güncelleme Tarihi:* ' + res.additional_info.updated + '\n*Boyut:* ' + boy + '\n*Açıklama:* ' + res.description + '\n\n*Yenilikler:* ' + res.whatsnew, MessageType.text);
         }).catch(async(err) => { return await message.sendMessage(err) });
     }).catch(async(err) => { return await message.sendMessage(err) });
 }));
 const def = "```Şarkı İsmi Gir!```"
 const del = "Şarkı sözlerini bulur."
 
-/*Asena.addCommand({pattern: 'lyric ?(.*)', fromMe: true, desc: del}, (async (message, match) => {
+Asena.addCommand({pattern: 'lyric ?(.*)', fromMe: true, desc: del}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,def, MessageType.text);
 
@@ -120,8 +120,8 @@ const del = "Şarkı sözlerini bulur."
 
     await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: '*Aratılan Şarkı:* ' + '```' + `${match[1]}` + '```\n*Bulunan Şarkı:* ```' + tit + '```\n*Şarkı Sahibi:* ```' + son + '```\n*Şarkı Sözleri:*\n\n' + aut });
 
-}));*/
-const Sr = "Searchs on Google"
+}));
+const Sr = "Googlede arama yapar."
 Asena.addCommand({pattern: 'search ?(.*)', fromMe: true, desc: Sr}, (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid,'```Aranacak Kelime Girmelisin!```', MessageType.text);
     await google.search(`${match[1]}`).then(async(res) => {
@@ -134,12 +134,12 @@ Asena.addCommand({pattern: 'search ?(.*)', fromMe: true, desc: Sr}, (async (mess
         await message.client.sendMessage(message.jid,binpayload,MessageType.text)
     });
 }));
-/*
+
 const cn = require('../config');
-const vf = "Confirmed Account"
-const novf = "Unconfirmed Account"
-const bs = "Yes"
-const nobs = "No"
+const vf = "Onaylanmış Hesap"
+const novf = "Onaylanmamış Hesap"
+const bs = "Evet"
+const nobs = "Hayır"
 
 if (cn.WORKTYPE == 'private') {
 
@@ -166,4 +166,3 @@ if (cn.WORKTYPE == 'private') {
         })
     });
 }
-*/
