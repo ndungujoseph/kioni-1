@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'alive' , fromMe: true, desc: Lang.ALIVE_DESC}, (asyn
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/welcome.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.mpeg, caption: "```Welcome```\n\n*Rules:* ```Don't be disrespectful, my friend```\n*Bot Dev:* ```Sam Pandey```" }
+            { mimetype: Mimetype.mpeg, caption: "```Welcome```\n\n*Rules:* ```Don't be disrespectful, my friend```\n*Bot Dev:* ```Abdurehman```" }
         )
     }
     else if (Config.ALIVEMSG == 'xtr') {
@@ -42,11 +42,11 @@ Asena.addCommand({pattern: 'alive' , fromMe: true, desc: Lang.ALIVE_DESC}, (asyn
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/4_5935988232951957622.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "```Sam Pandey Works For TheCyberbyte!" }
+            { mimetype: Mimetype.gif, caption: "*●▬▬▬ Owner Edition ▬▬▬●*\n*Hii,I'm Jarvis.*\n```I do many cool tasks for my owner 24 hours and 7 days in week```\n*Jarvis works for Abdurehman*\n```All things are working Perfectly```\n*Grade:* ```Developer```\n*Branch:* ```Owner Edition```\n\n*Works for Abdurehman*" }
         )
     }
     else {
-        await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by Sam Pandey*', MessageType.text);
+        await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Abdurehman*', MessageType.text);
     }
 }));
 
