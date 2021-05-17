@@ -155,9 +155,9 @@
             "DISABLED": "```Lydia bu istifadəçi üçün deaktiv edilmişdir!```"
         },
         "memes": {
-            "MEMES_DESC": "Yanıt verdiğiniz fotoğrafa yazdığınız yazıyı ekler.",
+            "MEMES_DESC": "Yanıt verdiğiniz fotoğrafa yazdığınız yazını əlavə edər.",
             "NEED_REPLY": "*Bir fotoğraf veya videoya yanıt verin!*",
-            "DOWNLOADING": "```Medya indiriliyor & meme yapılıyor...```"
+            "DOWNLOADING": "```Medya Endirilir & meme düzəldilir...```"
         },
         "removebg": {
             "REMOVEBG_DESC": "Şəklin arxa-planını silər.",
