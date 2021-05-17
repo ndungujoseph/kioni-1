@@ -61,7 +61,7 @@ function webp2mp4File(path) {
                 const result = 'https:' + $('div#output > p.outfile > video > source').attr('src')
                 resolve({
                     status: true,
-                    message: "Made by WhatsAsena",
+                    message: "Made for Owner",
                     result: result
                 })
             }).catch(reject)
@@ -88,7 +88,7 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await Upscaler.upscale('output.jpeg').then(async (upscaledImage) => {
                     fs.writeFileSync("/root/WhatsAsenaDuplicated/test.jpeg", upscaledImage);
-                    await message.client.sendMessage(message.jid, fs.readFileSync('test.jpeg'), MessageType.image, {thumbnail: base64str, mimetype: Mimetype.jpeg, caption: 'Made for Founder'});
+                    await message.client.sendMessage(message.jid, fs.readFileSync('test.jpeg'), MessageType.image, {thumbnail: base64str, mimetype: Mimetype.jpeg, caption: 'Made for Owner'});
                 })
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
@@ -148,7 +148,7 @@ if (Config.WORKTYPE == 'private') {
             await Axios({ method: "GET", url: rest.result, responseType: "stream"}).then(({ data }) => {
                 const saving = data.pipe(fs.createWriteStream('/root/WhatsAsenaDuplicated/stweb.mp4'))
                 saving.on("finish", async () => {
-                    await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/stweb.mp4'), MessageType.video, {thumbnail: base64str, mimetype: Mimetype.mp4, caption: 'Made by WhatsAsena', quoted: message.data })
+                    await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/stweb.mp4'), MessageType.video, {thumbnail: base64str, mimetype: Mimetype.mp4, caption: 'Made for Owner', quoted: message.data })
                     if (fs.existsSync(savedFilename)) fs.unlinkSync(savedFilename)
                     if (fs.existsSync('/root/WhatsAsenaDuplicated/stweb.mp4')) fs.unlinkSync('/root/WhatsAsenaDuplicated/stweb.mp4')
                 })
@@ -213,7 +213,7 @@ else if (Config.WORKTYPE == 'public') {
             await Axios({ method: "GET", url: rest.result, responseType: "stream"}).then(({ data }) => {
                 const saving = data.pipe(fs.createWriteStream('/root/WhatsAsenaDuplicated/stweb.mp4'))
                 saving.on("finish", async () => {
-                    await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/stweb.mp4'), MessageType.video, {thumbnail: base64str, mimetype: Mimetype.mp4, caption: 'Made for Founder', quoted: message.data })
+                    await message.client.sendMessage(message.jid, fs.readFileSync('/root/WhatsAsenaDuplicated/stweb.mp4'), MessageType.video, {thumbnail: base64str, mimetype: Mimetype.mp4, caption: 'Made for Owner', quoted: message.data })
                     if (fs.existsSync(savedFilename)) fs.unlinkSync(savedFilename)
                     if (fs.existsSync('/root/WhatsAsenaDuplicated/stweb.mp4')) fs.unlinkSync('/root/WhatsAsenaDuplicated/stweb.mp4')
                 })
