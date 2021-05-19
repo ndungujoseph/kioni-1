@@ -141,4 +141,13 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
             MessageType.text
         )
     }
+    else if (match[1] === 'oh no' || match[1] === 'no' || match[1] === 'nononono' || match[1] === 'oh') {
+
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/ses/4_28498461152782937363628.mp3"),
+            MessageType.audio, 
+           { mimetype: Mimetype.mp4Audio, ptt: true}
+        )
+    }
 }));
