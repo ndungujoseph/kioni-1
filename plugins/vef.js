@@ -134,13 +134,6 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
            { mimetype: Mimetype.mp4Audio, ptt: true}
         )
     }
-    else {
-        await message.client.sendMessage(
-            message.jid, 
-            '```Bulunamadı! Varolan Liste:```\n\n$onun bunun / bende türküm\n$hadsiz / hadsız\n$yasam / yasam masam\n$yavas / yavas git\n$noluyo / noluyo lan\n$kardeslik / kardes\n$yalan / namik kemal\n$bursa cocugu / bursa\n$hakkimi / helal\n$allah ya / geldi/\n$/fehleleruy/ biz\n$/mehemmed deniz/allahverdi/atam balasi/deniz\n$/seni hic alakadar etmez/memati/alakadar/alakdar etmez',
-            MessageType.text
-        )
-    }
     else if (match[1] === 'oh no' || match[1] === 'no' || match[1] === 'nononono' || match[1] === 'oh') {
 
         await message.client.sendMessage(
@@ -148,6 +141,13 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/ses/4_28498461152782937363628.mp3"),
             MessageType.audio, 
            { mimetype: Mimetype.mp4Audio, ptt: true}
+        )
+    }
+    else {
+        await message.client.sendMessage(
+            message.jid, 
+            '```Bulunamadı! Varolan Liste:```\n\n$onun bunun / bende türküm\n$hadsiz / hadsız\n$yasam / yasam masam\n$yavas / yavas git\n$noluyo / noluyo lan\n$kardeslik / kardes\n$yalan / namik kemal\n$bursa cocugu / bursa\n$hakkimi / helal\n$allah ya / geldi/\n$/fehleleruy/ biz\n$/mehemmed deniz/allahverdi/atam balasi/deniz\n$/seni hic alakadar etmez/memati/alakadar/alakdar etmez',
+            MessageType.text
         )
     }
 }));
