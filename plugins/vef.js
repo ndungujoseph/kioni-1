@@ -52,8 +52,8 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
             MessageType.audio, 
            { mimetype: Mimetype.mp4Audio, ptt: true}
         )
-    }
-    else if (match[1] === 'onun bunun' || match[1] === 'bende türküm' || match[1] === 'bende turkum' || match[1] === 'lan onun bunun') {
+     }
+     else if (match[1] === 'onun bunun' || match[1] === 'bende türküm' || match[1] === 'bende turkum' || match[1] === 'lan onun bunun') {
 
         await message.client.sendMessage(
             message.jid, 
