@@ -107,6 +107,15 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
            { mimetype: Mimetype.mp4Audio, ptt: true}
         )
     }
+    else if (match[1] === 'fehleleruy' || match[1] === 'ferid' || match[1] === 'ferid fehleleriy' || match[1] === 'biz') {
+
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/ses/4_590001212322142423.mp3"),
+            MessageType.audio, 
+           { mimetype: Mimetype.mp4Audio, ptt: true}
+        )
+    }
     else {
         await message.client.sendMessage(
             message.jid, 
@@ -115,3 +124,4 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
         )
     }
 }));
+
