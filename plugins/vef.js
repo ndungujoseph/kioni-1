@@ -125,10 +125,19 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
            { mimetype: Mimetype.mp4Audio, ptt: true}
         )
     }
+    else if (match[1] === 'seni hic alakadar etmez' || match[1] === 'memati' || match[1] === 'alakadar' || match[1] === 'alakdar etmez') {
+
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/ses/4_2382481247982384328.mp3"),
+            MessageType.audio, 
+           { mimetype: Mimetype.mp4Audio, ptt: true}
+        )
+    }
     else {
         await message.client.sendMessage(
             message.jid, 
-            '```Bulunamadı! Varolan Liste:```\n\n$onun bunun / bende türküm\n$hadsiz / hadsız\n$yasam / yasam masam\n$yavas / yavas git\n$noluyo / noluyo lan\n$kardeslik / kardes\n$yalan / namik kemal\n$bursa cocugu / bursa\n$hakkimi / helal\n$allah ya / geldi/\n$/fehleleruy/ biz $/mehemmed deniz/allahverdi/atam balasi/deniz',
+            '```Bulunamadı! Varolan Liste:```\n\n$onun bunun / bende türküm\n$hadsiz / hadsız\n$yasam / yasam masam\n$yavas / yavas git\n$noluyo / noluyo lan\n$kardeslik / kardes\n$yalan / namik kemal\n$bursa cocugu / bursa\n$hakkimi / helal\n$allah ya / geldi/\n$/fehleleruy/ biz\n$/mehemmed deniz/allahverdi/atam balasi/deniz\n$/seni hic alakadar etmez/memati/alakadar/alakdar etmez',
             MessageType.text
         )
     }
