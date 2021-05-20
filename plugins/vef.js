@@ -53,11 +53,20 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
            { mimetype: Mimetype.mp4Audio, ptt: true}
         )
      }
-     else if (match[1] === 'onun bunun' || match[1] === 'bende türküm' || match[1] === 'bende turkum' || match[1] === 'lan onun bunun') {
+     else if (match[1] === 'yasam' || match[1] === 'yasam masam' || match[1] === 'yaşam') {
+     
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/ses/4_5888542571046635589.mp3"),
+            MessageType.audio, 
+           { mimetype: Mimetype.mp4Audio, ptt: true}
+        )
+    }
+    else if (match[1] === 'kavdesim' || match[1] === 'helikoptev' || match[1] === 'kavdesim helikopter' || match[1] === 'Kardesim  helikopter') {
 
         await message.client.sendMessage(
             message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/ses/4_5888542571046635579.mp3"),
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/ses/4_6328749021276743278.mp3"),
             MessageType.audio, 
            { mimetype: Mimetype.mp4Audio, ptt: true}
         )
