@@ -89,7 +89,7 @@ Asena.addCommand({pattern: 'kick ?(.*)', fromMe: true, onlyGroup: true, desc: La
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/ezgif-3-6a1b0df18980.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "Soldiers Are Martyred To Keep The Homeland Alive I'm Jarvis, My Banners To Kick The Bitch Kids!" }
+                { mimetype: Mimetype.gif, caption: "Soldiers Are Martyred To Keep The Homeland Alive I'm Abdurehman,My Banners To Kick The Bitch Kids!" }
             )
             await message.client.sendMessage(message.jid,'```Mother Fucker``` ' +'@' + message.reply_message.data.participant.split("@")[0] + ' 😈', MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
             await message.client.groupRemove(message.jid, [message.reply_message.data.participant]);
@@ -102,7 +102,7 @@ Asena.addCommand({pattern: 'kick ?(.*)', fromMe: true, onlyGroup: true, desc: La
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/ezgif-3-6a1b0df18980.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "Soldiers Are Martyred To Keep The Homeland Alive I'm Jarvis, My Banners To Kick The Bitch Kids!" }
+                { mimetype: Mimetype.gif, caption: "Soldiers Are Martyred To Keep The Homeland Alive I'm Abdurehman, My Banners To Kick The Bitch Kids!" }
             )
             await message.client.sendMessage(message.jid,'```*HAHA*``` ' + etiketler + ' 😈', MessageType.text, {contextInfo: {mentionedJid: message.mention}});
             await message.client.groupRemove(message.jid, message.mention);
@@ -156,7 +156,7 @@ Asena.addCommand({pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc:
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy (2).mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "```Promoted by Jarvis```" }
+                { mimetype: Mimetype.gif, caption: "```Promoted by Admin```" }
             )
             await message.client.sendMessage(message.jid,'```You should love it``` ' + '@' + message.reply_message.data.participant.split("@")[0] + ' 🎉', MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
             await message.client.groupMakeAdmin(message.jid, [message.reply_message.data.participant]);
@@ -175,7 +175,7 @@ Asena.addCommand({pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc:
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy (2).mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "```Promoted by Jarvis```" }
+                { mimetype: Mimetype.gif, caption: "```Promoted by Admin```" }
             )
             await message.client.sendMessage(message.jid,'```You should enjoy it``` ' + etiketler + ' 🎉', MessageType.text, {contextInfo: {mentionedJid: message.mention}});
             await message.client.groupMakeAdmin(message.jid, message.mention);
@@ -225,7 +225,7 @@ Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: 
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy (3).mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "```Competently Downgraded by Jarvis!```" }
+                { mimetype: Mimetype.gif, caption: "```Competently Downgraded by Admin!```" }
             )
             await message.client.sendMessage(message.jid,'```Offended by his luck``` ' + '@' + message.reply_message.data.participant.split("@")[0] + ' 😈', MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
             await message.client.groupDemoteAdmin(message.jid, [message.reply_message.data.participant]);
@@ -243,7 +243,7 @@ Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: 
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy (3).mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "```Competently Downed by Jarvis!```" }
+                { mimetype: Mimetype.gif, caption: "```Competently Downed by Admin!```" }
             )
             await message.client.sendMessage(message.jid,'```Offended by his luck``` ' + etiketler + ' 😈', MessageType.text, {contextInfo: {mentionedJid: message.mention}});
             await message.client.groupDemoteAdmin(message.jid, message.mention);
