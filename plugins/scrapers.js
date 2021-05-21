@@ -21,7 +21,7 @@ const ExchangeRatesError = require('exchange-rates-api/src/exchange-rates-error.
 //============================== TTS ==================================================
 const fs = require('fs');
 const https = require('https');
-const googleTTS = require('google-translate-tts');
+const yandexTTS = require('google-translate-tts');
 //=====================================================================================
 //============================== YOUTUBE ==============================================
 const ytdl = require('ytdl-core');
@@ -137,7 +137,7 @@ if (config.WORKTYPE == 'private') {
                 ttsMessage = ttsMessage.replace(speedMatch[0], "")
             }
     
-            var buffer = await googleTTS.synthesize({
+            var buffer = await yandexTTS.synthesize({
                 text: ttsMessage,
                 voice: LANG
             });
@@ -574,7 +574,7 @@ else if (config.WORKTYPE == 'public') {
             ttsMessage = ttsMessage.replace(speedMatch[0], "")
         }
     
-        var buffer = await googleTTS.synthesize({
+        var buffer = await yandexTTS.synthesize({
             text: ttsMessage,
             voice: LANG
         });
