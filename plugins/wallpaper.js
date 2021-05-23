@@ -38,7 +38,7 @@ if (Config.WORKTYPE == 'private') {
                 const response = await fetch(`${im[i]}`);
                 const buffer = await response.buffer();
                 fs.writeFile(`/root/WhatsAsenaDuplicated/image.jpg`, buffer, (async () => {                 
-  	            return await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/image.jpg'), MessageType.image, {thumbnail: base64str, caption: 'Made for Owner ' });
+  	            return await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/image.jpg'), MessageType.image, {thumbnail: base64str, caption: 'Made for Kioni Ndungu ' });
                 }))
             })
         }
@@ -667,7 +667,7 @@ if (Config.WORKTYPE == 'private') {
         r_text[620] = "https://images.wallpaperscraft.com/image/smiley_emotions_minimalism_134124_1350x2400.jpg";
         var i = Math.floor(621*Math.random())
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(respoimage.data, "base64"), MessageType.image, {mimetype: Mimetype.png, thumbnail: base64str, caption: 'Made for Owner'})
+        await message.sendMessage(Buffer.from(respoimage.data, "base64"), MessageType.image, {mimetype: Mimetype.png, thumbnail: base64str, caption: 'Made for Kioni Ndungu'})
     }));
 }
 else if (Config.WORKTYPE == 'public') {
@@ -1301,7 +1301,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made for Owner'})
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made for Kioni Ndungu'})
 
     }));
 }
