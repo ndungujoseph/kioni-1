@@ -23,7 +23,7 @@ const axios = require('axios');
             })
 
             await message.sendMessage(Buffer.from(imageBuffer.data), MessageType.image, {
-                        caption: "Made By Mr Sam"
+                        caption: "Made By Kioni Ndungu"
             })
           })
       },
