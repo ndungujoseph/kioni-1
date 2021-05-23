@@ -19,22 +19,22 @@ if (Config.WORKTYPE == 'private') {
 
 	Asena.addCommand({ pattern: 'henta', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/hentai?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis & Suraj' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Kioni Ndungu' })
 	}));
 
 	Asena.addCommand({ pattern: 'panties', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/panties?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Kioni Ndungu' })
 	}));
 
 	Asena.addCommand({ pattern: 'masturb', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/mstrb?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Kioni Ndungu' })
 	}));
 
 	Asena.addCommand({ pattern: 'pussy', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/pussy?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Kioni Ndungu' })
 	}));
 }
 
@@ -46,22 +46,22 @@ else if (Config.WORKTYPE == 'public') {
 
 	Asena.addCommand({ pattern: 'hentai', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/hentai?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Kioni Ndungu' })
 	}));
 
 	Asena.addCommand({ pattern: 'panties', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/panties?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Kioni Ndungu' })
 	}));
 
 	Asena.addCommand({ pattern: 'masturb', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/mstrb?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Kioni Ndungu' })
 	}));
 
 	Asena.addCommand({ pattern: 'pussy', fromMe: true }, (async (message, match) => {
 		var drkhent = await axios.get(`https://api.xteam.xyz/randomimage/pussy?APIKEY=E67bd1bafe81b611`, { responseType: 'arraybuffer' })
-		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Jarvis' })
+		await message.sendMessage(Buffer.from(drkhent.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Kioni Ndungu' })
 	}));
 }
 
