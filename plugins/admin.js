@@ -40,7 +40,7 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/Edited_20210227_152650.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "Admin tarafından banlandın" }
+                { mimetype: Mimetype.gif, caption: "Admin Kioni Ndungu" }
             )
             await message.client.sendMessage(message.jid,'```Haha Loser,Get lost from here``` ' +'@' + message.reply_message.data.participant.split("@")[0] + ' 😈', MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
             await message.client.groupRemove(message.jid, [message.reply_message.data.participant]);
@@ -53,7 +53,7 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/Edited_20210227_152650.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "Admin Tarafından Banlandın" }
+                { mimetype: Mimetype.gif, caption: "Admin Kioni Ndungu" }
             )
             await message.client.sendMessage(message.jid,'```Haha Loser``` ' + etiketler + ' 😈', MessageType.text, {contextInfo: {mentionedJid: message.mention}});
             await message.client.groupRemove(message.jid, message.mention);
