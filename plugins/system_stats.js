@@ -17,7 +17,7 @@ Asena.addCommand({pattern: 'alive' , fromMe: true, desc: Lang.ALIVE_DESC}, (asyn
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/wp2664416-tony-stark-wallpaper-hd.jpg"),
             MessageType.image, 
-            { mimetype: Mimetype.image, caption: "*●▬▬▬ Owner Edition ▬▬▬●*\n*Hii,I'm Jarvis.*\n```I do many cool tasks for my owner 24 hours and 7 days in week```\n*Jarvis works for Abdurehman*\n```All things are working Perfectly```\n*Grade:* ```Developer```\n*Branch:* ```Owner Edition```\n\n*Powered by Abdurehman*" }
+            { mimetype: Mimetype.image, caption: "*●▬▬▬ Kioni Ndungu Edition ▬▬▬●*\n*Hii,I'm Kioni Ndungu Assistant.*\n```I do perform cool tasks for my god Kioni Ndungu 24 hours and 7 days in week```\n* I AM because WE ARE*\n```All things are working Perfectly```\n*Grade:* ```Unidentified```\n*Branch:* ```Kioni Ndungu Edition```\n\n*Powered by I.T H.A.C.K.S*" }
         )
     }
     else if (Config.ALIVEMSG == 'hosgeldin') {
@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'alive' , fromMe: true, desc: Lang.ALIVE_DESC}, (asyn
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/welcome.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.mpeg, caption: "```Welcome```\n\n*Rules:* ```Don't be disrespectful, my friend```\n*Bot Dev:* ```Abdurehman```" }
+            { mimetype: Mimetype.mpeg, caption: "```Welcome```\n\n*Rules:* ```Don't be disrespectful, my friend```\n*Bot Dev:* ```Kioni Ndungu```" }
         )
     }
     else if (Config.ALIVEMSG == 'xtr') {
@@ -42,11 +42,11 @@ Asena.addCommand({pattern: 'alive' , fromMe: true, desc: Lang.ALIVE_DESC}, (asyn
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/4_5935988232951957622.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "*●▬▬▬ Owner Edition ▬▬▬●*\n*Hii,I'm Jarvis.*\n```I do many cool tasks for my owner 24 hours and 7 days in week```\n*Jarvis works for Abdurehman*\n```All things are working Perfectly```\n*Grade:* ```Developer```\n*Branch:* ```Owner Edition```\n\n*Works for Abdurehman*" }
+            { mimetype: Mimetype.gif, caption: "*●▬▬▬ Kioni Ndungu Edition ▬▬▬●*\n*Hii,I'm Kioni Ndungu Assistant.*\n```I do perform cool tasks for my god Kioni Ndungu 24 hours and 7 days in week```\n*I AM because WE ARE*\n```All things are working Perfectly```\n*Grade:* ```Unidentified```\n*Branch:* ```Kioni Ndungu Edition```\n\n*Powered by I.T H.A.C.K.S*" }
         )
     }
     else {
-        await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Abdurehman*', MessageType.text);
+        await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Kioni Ndungu*', MessageType.text);
     }
 }));
 
